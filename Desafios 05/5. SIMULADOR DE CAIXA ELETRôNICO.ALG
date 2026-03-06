@@ -1,12 +1,12 @@
-Algoritmo "5. Simulador de Caixa Eletrônico"
-// Disciplina  : Lógica de Programação
-// Professor   : André Olímpio 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+Algoritmo "5. Simulador de Caixa EletrÃ´nico"
+// Disciplina  : LÃ³gica de ProgramaÃ§Ã£o
+// Professor   : AndrÃ© OlÃ­mpio 
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 06/03/2026
 var
    valor, resto: inteiro
-   nota100, nota50, nota20, nota10, nota5, nota2: inteiro
+   nota100, nota50, nota20, nota10, nota5, nota2, nota1: inteiro
 
 Inicio
 
@@ -14,7 +14,7 @@ Inicio
    leia(valor)
 
    se (valor < 10) ou (valor > 1000) entao
-      escreval("Valor inválido. Digite um valor entre 10 e 1000.")
+      escreval("Valor invÃ¡lido. Digite um valor entre 10 e 1000.")
    senao
 
       resto <- valor
@@ -36,6 +36,10 @@ Inicio
 
       nota2 <- resto div 2
       resto <- resto mod 2
+      
+      nota1 <- resto div 1
+      resto <- resto mod 1
+      
 
       escreval("----- Notas entregues -----")
 
@@ -61,6 +65,10 @@ Inicio
 
       se (nota2 > 0) entao
          escreval(nota2, " nota(s) de 2")
+      fimse
+      
+       se (nota1 > 0) entao
+         escreval(nota1, " nota(s) de 1")
       fimse
 
    fimse
