@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sobre Mim</title>
+
+<style>
+body {
+    background-color: #000;
+    font-family: Arial;
+    margin: 0;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 60px;
+    color: #ffb4e0;
+    font-family: 'Brush Script MT', cursive;
+    margin-top: 40px;
+}
+
+.subtitulo {
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.coluna {
+    width: 300px;
+}
+
+.coluna img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.coluna h3 {
+    color: #ffb4e0;
+    margin-top: 15px;
+}
+
+.coluna p {
+    color: #F8F8FF;
+    font-size: 15px;
+}
+
+.insta {
+    margin-top: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.insta a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.insta a:hover {
+    text-decoration: underline;
+}
+
+.botao-voltar {
+    background-color: #ff69b4;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.botao-voltar:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+    color: white;
+}
+
+
+.amigos-box {
+    position: relative;
+    display: block;
+}
+
+.amigos-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+
+.amigos-box:hover .overlay-text {
+    opacity: 1;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #ff69b4,
+                 0 0 30px #ff1493;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="titulo">Sobre Mim</div>
+<p class="subtitulo">Conheça mais sobre minha vida e interesses</p>
+
+<audio controls autoplay loop>
+    <source src="site pessoal/Sorri, Sou Rei.mp3" type="audio/mpeg">
+</audio> 
+
+<div class="container">
+
+    <div class="coluna">
+        <img src="site pessoal/pimposa.png">
+        <h3>Minha Vida</h3>
+        <p>Meu nome é Maria Julia, tenho 17 anos e sou apaixonada por aprender e explorar novas experiências.</p>
+    </div>
+
+    <div class="coluna">
+        <img src="site pessoal/pc.png">
+        <h3>Interesses</h3>
+        <p>Gosto de tecnologia, fotografia, redes sociais e música. Sempre buscando evoluir e aprender mais.</p>
+    </div>
+
+    <div class="coluna">
+        <img src="site pessoal/majufotos/timao.jpg">
+        <h3>Paixões</h3>
+        <p>Sou apaixonada pelo Corinthians e por tudo que envolve emoção, cultura e criatividade.</p>
+    </div>
+
+</div>
+
+<div class="container">
+
+    <div class="coluna">
+        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/05/davi-brito-2-e1747568699869.jpg?w=1200">
+        <h3>Inspiração</h3>
+        <p>Davi Brito me inspira pela sua determinação e foco em melhorar a vida da família.</p>
+    </div>
+
+    <div class="coluna">
+        <img src="site pessoal/anacastela.gif">
+        <h3>Carreira</h3>
+        <p>Atuo como modelo e estou me desenvolvendo na área de tecnologia.</p>
+    </div>
+
+    <div class="coluna">
+        <a href="migos.html" class="amigos-box">
+            <img src="site pessoal/majufotos/amigos.jpg">
+            <span class="overlay-text">AMIGOS</span>
+        </a>
+        <h3>Família e amigos</h3>
+        <p>Minha família e meus amigos são essenciais na minha vida. Sou grata por todo apoio, incentivo e amor que sempre recebo deles.</p>
+    </div>
+
+</div>
+
+<div class="insta">
+    📸 <a href="https://instagram.com/mayu.xu" target="_blank">@mayu.xu</a>
+    <a class="botao-voltar" href="index.html">⬅ Inicio</a>
+</div>
+
+</body>
+</html>
