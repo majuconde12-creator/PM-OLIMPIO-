@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Aplicação Inicial - JavaScript</title>
+</head>
+<body>
+
+<center>
+<h1>CALCULADORA - SUBTRAÇÃO </h1>
+
+N1:<input type="number" id="num1"> 1° número <br><br>
+N2:<input type="number" id="num2"> 2° número <br><br>
+
+<button onclick="subtracao()">Calcular</button>
+</center>
+
+<script>
+function subtracao(){
+    let n1 = Number(document.getElementById("num1").value);
+    let n2 = Number(document.getElementById("num2").value);
+    let soma = n1 - n2;
+    alert(n1 + " - " + n2 + " = " + soma);
+}
+</script>
+
+</body>
+</html>

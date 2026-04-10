@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+</head>
+<body>
+
+<center>
+
+  <h1>CALCULADORA - DIVISÃO </h1>
+
+  <input type="number" id="num1"> 1° número <br><br>
+  <input type="number" id="num2"> 2° número <br><br>
+
+  <button onclick="dividir()">Calcular</button>
+
+</center>
+
+<script>
+
+function dividir() {
+
+  let n1 = Number(document.getElementById("num1").value);
+  let n2 = Number(document.getElementById("num2").value);
+
+  if (n2 === 0) {
+    alert("Não é possível dividir por zero!");
+    return;
+  }
+
+  let divisao = n1 / n2;
+  alert("O resultado é: " + divisao);
+}
+
+</script>
+
+</body>
+</html>
