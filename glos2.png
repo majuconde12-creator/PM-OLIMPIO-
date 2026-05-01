@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Make Chique</title>
+
+<style>
+
+body{
+    background-color:#daafbf;
+    margin:0;
+    font-family: Arial;
+}
+
+header{
+    text-align:center;
+    background:#daafbf;
+    padding:60px;
+}
+
+header img{
+    max-width:450px;
+    width:100%;
+}
+
+.secao {
+    text-align:center;
+    margin: 20px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #ff69b4;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+.produtos{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:30px;
+    padding:30px;
+}
+
+.produto-link{
+    text-decoration:none;
+    color:black;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+    transition:0.3s;
+    height:420px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:contain;
+    background:white;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:10px 0 5px;
+    font-size:18px;
+}
+
+.preco{
+    color:#ff1493;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:auto;
+}
+
+@media(max-width:900px){
+    .produtos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:500px){
+    .produtos{
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="fotos/logo.png">
+</header>
+
+<div class="secao">
+    <a class="botao" href="index.html">Voltar</a>
+</div>
+
+<div class="produtos">
+
+<a href="make1.html" class="produto-link">
+<div class="card">
+<img src="fotos/make 1.webp">
+<h3>Make Volta Sarinha</h3>
+<p class="preco">R$ 280,00</p>
+</div>
+</a>
+
+<a href="Make 2.html" class="produto-link">
+<div class="card">
+<img src="fotos/make manu.png">
+<h3>Make Manu Gavassi</h3>
+<p class="preco">R$ 599,00</p>
+</div>
+</a>
+
+<a href="make3.html" class="produto-link">
+<div class="card">
+<img src="fotos/make3.jpg">
+<h3>Make pra pegar o boy</h3>
+<p class="preco">R$ 479,00</p>
+</div>
+</a>
+
+<a href="make4.html" class="produto-link">
+<div class="card">
+<img src="fotos/make5.png">
+<h3>Make Chique</h3>
+<p class="preco">R$ 4.999,00</p>
+</div>
+</a>
+
+<a href="make5.html" class="produto-link">
+<div class="card">
+<img src="fotos/make biquinho.png">
+<h3>Make Casual Chique</h3>
+<p class="preco">R$ 109,00</p>
+</div>
+</a>
+
+<a href="make6.html" class="produto-link">
+<div class="card">
+<img src="fotos/make5.jpg">
+<h3>Make Simples</h3>
+<p class="preco">R$ 90,00</p>
+</div>
+</a>
+
+<a href="make7.html" class="produto-link">
+<div class="card">
+<img src="fotos/make vila.jpg">
+<h3>Make Vilã</h3>
+<p class="preco">R$ 189,00</p>
+</div>
+</a>
+
+<a href="make8.html" class="produto-link">
+<div class="card">
+<img src="fotos/make close.png">
+<h3>Make Close</h3>
+<p class="preco">R$ 1.999,00</p>
+</div>
+</a>
+
+</div>
+
+</body>
+</html>
